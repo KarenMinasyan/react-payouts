@@ -40,23 +40,30 @@ export const Td = styled.td`
 	padding: 16px 24px;
 `;
 
-export const ArrowWrapper = styled.div`
-	display: flex;
-	flex-direction: column;
-	height: 25px;
-`;
-
 export const ArrowDown = styled(Arrow)`
 	fill: ${BLACK_LIGHT};
 	margin-left: 8px;
 	height: 13px;
+	margin-top: 7px;
 `;
 
 export const ArrowUp = styled(Arrow)`
 	fill: ${BLACK_LIGHT};
 	margin-left: 8px;
 	height: 13px;
+	margin-bottom: 5px;
 	transform: rotate(180deg);
+`;
+
+export const ArrowWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	height: 25px;
+
+	${ArrowDown}, ${ArrowUp} {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 `;
 
 export const TableHeader = styled.div`
